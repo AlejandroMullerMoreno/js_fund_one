@@ -1,6 +1,18 @@
 function getComputerChoice(){
     let randomChoice = Math.floor(Math.random() * 3)
-    return randomChoice;
+    switch(randomChoice) { 
+        case 0:
+            randomChoice="Rock";
+            break;
+        case 1:
+            randomChoice="Paper";
+            break;
+        case 2:
+            randomChoice="Scissors";
+            break;
+
+    }
+    return randomChoice
 }
 
 for (let i=0; i<= 5; i++){
